@@ -1,0 +1,547 @@
+
+@import "partials/generales";
+@import "partials/nav";
+@import "partials/colors";
+@import "partials/rrss";
+
+/*INDEX---------------------------------------------------------------------
+---------------------------------------------------------------------------*/
+
+
+.cartel {
+	background-image: url(../assets/img/portada2.jpeg);
+	background-size: 100%;
+	color: white;
+	font-family:'Mulish', sans-serif;
+	font-size: 44px;
+	font-style: italic;
+	font-weight: 300;
+	padding: 77px;
+	padding-left:250px;
+	margin-top: 10px;
+	display:flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-top:0px;
+}
+
+.linkCartel {
+	display:inline-block;
+	position: absolute;
+	transform:translate(1076px,-80px);
+	background-color: #0C4C55;
+	color:white;
+	border:solid 1px white ;
+	font-family:'Mulish', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	text-decoration: none;
+	border-radius: 21px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right:5px;
+
+}
+
+.transicionBotonCartel {
+
+   transition: all 2s;       
+}
+
+.transicionBotonCartel:hover {
+	border:1px #0C4C55 solid;
+    background-color:white;
+    background-size: 100%;
+    text-decoration:none;
+    color:#0C4C55;
+    font-weight: 300;
+}
+
+.fondoTurno {
+	background-image: url(../assets/img/agenda2.jpeg);
+	background-size: 100%;
+	margin-top: 0px;
+	padding-bottom: 40px;
+}
+
+
+.quienesSomosFuente {
+	font-family:'Mulish', sans-serif;
+	font-size: 35px;
+	font-weight: 300;
+	color:white;
+	padding-top: 3px;
+   
+}
+
+.fondoQuienesSomos {
+	background-image: url(../assets/img/equipo5.jpeg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-top:0px;
+	padding-bottom: 437px;
+}
+
+.textoConoce {
+	font-family:'Mulish', sans-serif;
+	font-size: 13px;
+	font-weight: 200;
+	color: white;
+    font-style: italic;
+}
+
+.horarios{
+	text-align:left;
+	font-weight: 600;
+	color: #DFDFDF;
+	&--colorHora{
+		font-weight:500;
+		color:#949494;
+	}
+	&--colorHoraFinde{
+		font-weight:500;
+		color:#636363;
+	}
+}
+
+
+.marginQuienesSomos {
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:24px;
+}
+
+.paddingFotoQuienesSomos{
+	padding-right:0px;
+	padding-left:0px;
+}
+
+.equipoIndex {
+	background-image: url(../assets/img/fondoequipo10.jpeg);
+	background-size: 100%;
+}
+
+.paddingQuienesSomos{
+	padding-top:10px;
+}
+
+
+/*Fin INDEX-----------------------------*/
+
+
+
+/*FOOTER-----------------------------------------------------------------
+------------------------------------------------------------------------*/
+
+
+.textoFooter {
+	font-family: 'Mulish', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	color: white;
+	font-style:italic;
+	padding-bottom:10px;
+	text-align:left;
+	margin-bottom: 0px;
+	&--small {
+		font-size: 13px;
+    	padding-top: 0px;
+    	padding-bottom: 0px;
+    	margin: 1px;
+	}
+	&--small--centrado {
+		@extend.textoFooter--small;
+		text-align:center;
+
+
+	}
+	&--xsmall{
+		@extend.textoFooter--small--centrado;
+		font-size: 11px;
+	}
+}
+
+.gradienteFooter {
+	background-image: linear-gradient(to right, #158899, #0C4C55, #031214);
+	margin-top:0px;
+}
+
+.logoFooter{
+	background-repeat: no-repeat;
+	padding: 10px;
+	opacity:0.5;
+	padding-top: 0px;
+   padding-bottom: 0px
+
+}
+
+
+/*Fin FOOTER----------------------------*/
+
+
+
+/*PROFESIONALES-----------------------------------------------------------
+------------------------------------------------------------------------*/
+
+
+.encabezados{
+	padding-top: 30px;
+}
+
+
+/*Fin PROFESIONALES---------------------*/
+
+
+
+
+/*TRATAMIENTOS------------------------------------------------------------
+------------------------------------------------------------------------*/
+
+
+.gridTratamientos{
+	display:grid;
+	grid-template-rows: 200px 200px;
+	grid-template-columns: 300px 300px 300px;
+	justify-content: center;
+	grid-column-gap: 25px;
+	grid-row-gap: 15px;
+	text-align: center;
+}
+
+.portadasTratTips {
+   &__fondo {
+		background-size:100%;
+		border-radius: 5px;
+		color: white;
+		font-family:'Mulish', sans-serif;
+		font-size: 20px;
+		font-weight: 500;
+		padding-bottom: 90px;
+		padding-top: 70px;
+		margin-top: 10px;
+		display:flex;
+		justify-content: center;
+		align-items: flex-end;
+		text-decoration:none;
+		&--ortodoncia { 
+			background-image: url(../assets/img/ortodoncia.jpeg);
+		}
+		&--nino { 
+			background-image: url(../assets/img/nino.jpeg);
+		}
+		&--blanqueamiento { 
+			background-image: url(../assets/img/blanqueamiento.jpeg);
+		}
+		&--implante { 
+			background-image: url(../assets/img/implante.jpeg);
+		}
+		&--incrustacion { 
+			background-image: url(../assets/img/incrustacion.jpeg);
+		}
+		&--estetica { 
+			background-image: url(../assets/img/esteticas.jpeg);
+		}	
+	}
+}
+
+
+.paddingSectionProf{
+	padding-top:40px;
+	padding-bottom: 150px;
+}
+
+.transicionTratamientos {
+
+   transition: all 1s;       
+}
+.transicionTratamientos:hover {
+	transform: scale(1.1,1.1);
+
+}
+
+
+
+
+.fuenteAzul1{
+	color: $blue4;
+	font-weight:500;
+	
+}
+
+
+.fondoTrat{
+	background-image:linear-gradient(to bottom, white, white, $blue2, $blue3, $blue4, $blue5, $blue6);
+	&--advertencia{
+	background-color:yellow;
+	}
+}
+
+
+/*FIN Tratamientos-----------------------*/
+
+
+/*ODONTOTIPS------------------------------------------------------------
+------------------------------------------------------------------------*/
+
+
+.tips{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.fondoTips{
+	background-image:linear-gradient(to bottom, white, white, $blue6,);
+}
+
+
+@each $portadas-tips in cuidados-postop, enfermedades-oc, generales, higiene-imp, higiene-ort, higiene-prot, mitos, nunca, tecnicas {
+   .#{$portadas-tips}-img { 
+         background-image:  
+          url("../assets/img/odontotips/#{$portadas-tips}.jpg");
+          background-size:100%;
+    }
+}  
+
+
+/*FIN Odontotips-------------------------*/
+
+
+/*CONTACTO----------------------------------------------------------------
+------------------------------------------------------------------------*/
+
+
+.botones{
+	padding-top:15px;
+	display:flex;
+	flex-flow: column wrap;
+	align-content: space-around;
+	&__contacto{
+		font-size: 15px;
+		font-weight: 300;
+		margin-left:10px;
+		margin-right:6px;
+
+	}
+	
+}
+
+
+.fondoDatosContacto {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.flexContacto{
+	 display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flexContactoItems{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;	
+}
+
+.prlxFondoContacto {
+
+  /* The image used */
+
+  background-image: url(../assets/img/fondocontacto11.jpg);
+
+  /* Set a specific height */
+
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+
+  background-attachment: fixed;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  background-size: 100%;
+
+               
+/* box modeling */
+padding:0px;
+margin-bottom:50px;
+
+}
+
+
+.infoContacto{
+@extend.textoFooter--small;
+padding:10px;
+text-decoration:none;
+color:white;
+font-size:20px;	
+}
+
+.colorGris{
+	color:gray;
+}
+
+.paddingInfoContacto{
+	padding:20px;
+}
+
+
+/*-----CARTEL FLOTANTE INDEX----------------------------------------------------------------
+------------------------------------------------------------------------*/
+
+.reservaFlotante {
+	position:fixed;
+	top: 250px;
+	right: 20px;
+	display: flex;
+	justify-content: flex-end;
+	z-index:999999;
+}
+
+.reservaFlotanteClose {
+	position:fixed;
+	top: 210px;
+	right: 10px;
+	display: flex;
+	justify-content: flex-end;
+	z-index:999999;
+}
+
+.reservaFlotanteTexto {
+	position:fixed;
+	top: 265px;
+	right: 37px;
+	display: flex;
+	justify-content: flex-end;
+	z-index:9999999;
+	font-weight: 500;
+}
+
+
+
+/*-----FIN CARTEL FLOTANTE INDEX----------------------------------------------------------------
+------------------------------------------------------------------------*/
+
+/*MOBILE------------------------------------------------------------------
+------------------------------------------------------------------------*/
+
+
+@media only screen and (max-width: 769px){
+
+	.botonCartelMobile{
+	 transform: translate(208px, -89px);
+    font-size: 12px;
+	}
+
+   .portadaMobile {
+    background-image: url(../assets/img/portadamobile.jpg);
+    background-size: 100%;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 21px;
+    font-style: italic;
+    font-weight: 500;
+    padding-left: 185px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 0px;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+	}
+
+	.botonProfMobile {
+		transform: translate(272px, -51px);
+		width: 44%;
+		font-size: 13px;
+	}
+
+	.encabezadosMob{
+		transform: translate(121px);
+	}
+
+	.equipoIndexMobile{
+
+		background-image: url(../assets/img/fondoequipo11.jpg);
+		background-size: 100%;
+	}
+
+	.textoCentradoMob {
+		text-align: center;
+	}
+
+	.fuente1Mobile{
+		font-size: 19px;
+
+	}
+
+	.fuente2Mobile{
+		font-size: 14px;
+	}
+
+	.posicionNombresMob{
+		transform: translate(-52px, 113px);
+	}
+
+	.whatsappMobile {
+		 position: fixed;
+	    top: 550px;
+	    right: 2px;
+	    display: flex;
+	    justify-content: flex-end;
+	    transform: translate(-12px, -96px);
+	    width: 13%;
+	}
+
+	.fondoContactoMobile{
+	background-attachment: inherit;
+	background-image: url(../assets/img/fondocontactovertical2.jpg);
+	background-repeat: repeat;
+	}
+
+
+	.rrssMobile {
+		transform: translate(-16px);
+		display:flex;
+		flex-direction:row;
+	}	
+
+	.centrarItemsMobile{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.menuNavMobile {
+	display: flex;
+	justify-content: center;
+	padding-right: 20px;
+	padding-left: 20px;
+	}
+
+	.logoNavMobile{
+	width:35%;
+	}
+
+	.textoCentradoMobile{
+	text-align:center;
+	}
+
+	.flexProfMobile {
+	display:flex;
+	flex-direction:column-reverse;
+	justify-content:center;
+	}
+
+} 
+
+
+
+
+/*Fin MOBILE----------------------------*/
+

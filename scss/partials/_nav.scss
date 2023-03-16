@@ -1,0 +1,54 @@
+/*NAV----------------------------------------------------------------------
+--------------------------------------------------------------------------*/
+
+
+.logoNav {
+	background: no-repeat;
+	padding: 0px;
+}
+
+.gradienteNav {
+	background-image: linear-gradient(to right, white, #1CB8D0, #0C4C55);
+}
+
+.ubicacionLogo {
+	padding-left: 20px;
+}
+
+.menuNav {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 250px;
+    padding-left: 250px;
+}
+
+.fuenteNav {
+	color:white;
+	padding: 0px; 
+	font-size: 16px;
+}	
+
+.stickyNav {
+	position: sticky;
+	z-index: 999;
+	top:0px;
+}
+
+.paddingNav {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.gradienteSubmenu{
+	background-image: linear-gradient(to bottom, #1AA8BD, #0C4C55);
+}
+
+.colorSubmenu{
+	color: white;
+}
+
+.dropdown-left{
+	left:-450%;
+}
+
+/*Fin NAV-------------------------------*/

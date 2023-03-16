@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="odontologia, odontologo, dentista, blanqueamiento, dental, ortodoncia, perno, corona, dolor, muela, urgencia, clinica odontologica, clínica, odontologa, odontopediatra, niños, odontopediatria, implantes, tratamiento de conducto, mendoza, ciudad, hilo dental, tratamientos, profesionales">
+    <meta name="description"
+        content="Somos una clínica odontológica en la Ciudad de Mendoza. Te invitamos a contactarnos para mejorar tu sonrisa!">
+    <title>Contacto - Alineare Odontología</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <!--fuente-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--fuente logo-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- CSS calendario -->
+    <link rel="stylesheet" href="../css/jquery.datetimepicker.min.css">
+
+    <!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+
+    <!--CSS Formulario-->
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+  
+    <link rel="stylesheet" href="../css/estilo.css">
+    
+</head>
+
+<body  style="overflow-x: hidden; background-image: linear-gradient(to right, #B8E4EA,white,white,white,white,white,white,white,  #B8E4EA);">
+
+
+
+    
+
+    <section class="container-fluid paddingL0 paddingR0 marginR0" id="paginaInicial">
+        <div class="centrarItems paddingTop3" id="spinner">
+            <div class="spinner-border text-light" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+
+
+        
+        <!---INICIO-->
+        <div id="booking" class="section">
+			<div class="section-center">
+
+                <div>
+                    <a href="#" id="accesoControl" style="display:flex; justify-content: flex-end; margin-top:40px; margin-right:30px; text-decoration: none; color:white;">Control <img src="../assets/img/turnos/control-logo.png" width="2%" style="margin-left:10px;"></a>
+                </div>
+
+				<div>
+					<div class="row rowReverse marginR0">
+						<div class="col-md-7 col-md-push-5">
+							<div class="booking-cta paddingL3 marginTop7">
+                                <section id="bienvenida" class="titulosPrincipales textoCentrado">
+                                    <h1>Bienvenido a nuestro sistema de turnos</h1>
+                                </section>
+
+                                <div id="reserve" style="display:none">
+                                    <h1>Reserve su turno</h1>
+								    <p>Bienvenido al sistema de turnos de Alineare!<br><br>
+
+									Para continuar, por favor ingrese sus datos personales<br>
+									y obtenga su turno rápidamente.<br><br><br>
+									Si desea conocer más sobre nosotros,<br> haga <strong class="whiteHover colorSubmenu "><a href="https://emif94.github.io/alineareodontologia/" target="blank" style="text-decoration: none; color:white;">click aquí</a></strong>
+								    </p>
+                                </div>
+								
+							</div>
+						</div>
+
+
+						<div class="col-md-4 col-md-pull-7">
+							<div class="booking-form">
+
+                                <span class="form-label" id="formulario">Complete sus datos</span>
+                                <div style="display:none" id="encabezado1">
+                                    <span class="form-label" >Por favor verifique sus datos</span><br>
+                                    <p class="colorGris" style="font-size:12px">En caso de no estar correctos, nos informará el día de la consulta.</p>
+                                </div>
+                                <div style="display:none" id="encabezado2">
+                                    <span class="form-label textoCentrado" >Elija Especialidad</span><br>
+                                    <p class="colorGris textoCentrado" style="font-size:12px">En caso de <strong>urgencia</strong>, comuníquese con nosotros al 2613725884.<br>
+                                    Haremos todo lo posible por solucionar su inconveniente.</p>
+                                
+                                </div>
+
+                                <div id="datosPaciente">
+                                </div>
+                                
+
+								<form action="#" class="botones" id="inputsDatos">
+								
+										
+										<input class="form-control marginBott1" type="text" name="apellido" placeholder="Apellido/s (obligatorio)" required>									
+									
+										
+										<input class="form-control marginBott1" type="text" name="nombre" placeholder="Nombre/s (obligatorio)" required>									
+									
+										
+										<input class="form-control marginBott1" type="text" name="dni" placeholder="N° de DNI (obligatorio)" required>							
+									
+										
+										<select  name="obraSocial" placeholder="Obra Social"  class="form-control marginBott1" required>
+											<option value="" disabled selected class="colorGris">Obra Social...▼</option>
+											<option value="PACIENTE PARTICULAR">PACIENTE PARTICULAR</option>
+											<option value="SWISS MEDICAL">SWISS MEDICAL</option>
+											<option value="MEDIFE">MEDIFE</option>
+											<option value="GALENO">GALENO</option>
+                                            <option value="SANCOR SALUD">SANCOR SALUD</option>
+											<option value="PREVENCION SALUD">PREVENCION SALUD</option>
+											<option value="OSDE">OSDE</option>
+											<option value="MEDICUS">MEDICUS</option>
+										</select>																			
+									
+										
+										<input type="text" name="Afiliado" placeholder="N° de Afiliado (SI POSEE OBRA SOCIAL)"  class="form-control marginBott1">							
+		
+										
+										<input type="email" name="email" placeholder="E-mail (obligatorio)"  class="form-control marginBott1" required>
+
+										
+										<input type="text" name="motivo" placeholder="Motivo de Consulta (ej: caries, dolor,etc.)" class="form-control marginBott1">
+					
+				
+										<input type="submit" name="enviar" value="Continuar" class="submit-btn marginTop1" id="botonContinuar">	
+                                        						
+
+								</form>
+
+                                <div id="especialidad" style="display:none">
+                                    <form id="elegirEspecialidad" class="textoCentrado">
+
+                                        <select id="" required>
+                                            <option value="" disabled="disabled" selected="selected">Especialidad...</option>
+                                            <option value="Odontología General, Rehabilitación y Estética">Odontología General, Rehabilitación y
+                                                Estética
+                                            </option>
+                                            <option value="Ortodoncia">Ortodoncia</option>
+                                            <option value="Odontopediatría">Odontopediatría</option>
+                                        </select>
+                                        <input type="submit" id="btnbutton" class="btn btn-outline-info" type="button"
+                                            value="Siguiente" style="margin-left:250px; margin-top:15px;">
+
+                                        
+
+
+                                    </form>
+
+                                </div>
+
+                               
+                                
+                                <span id="turnoAprobado" style="display:none">
+                                    <span>
+                                        <div class="centrarItems">
+                                            <img src="../assets/img/turnos/notificacion.png">
+                                        </div>
+                                        <br>
+                                        <span id="infoTurnoDisplay" class="centrarItemsCol"></span>
+                                    </span></span>
+                                    <span class="centrarItems"><button type="button" id="elegirOtroTurno" class="btn btn-outline-info" style="margin-left:0px; display:none;">Elegir otro turno</button>
+                                </span> 
+
+                                <div id="elegirTurno" style="display:none">
+                                    <span class="form-label" >Seleccione fecha y horario</span><br>
+                                    <p class="colorGris" style="font-size:12px">Horarios de atención:<br>Lunes a Viernes de 14:00 a 19:15.</p>
+                                    
+                                    <form id="fechaHora" class="textoCentrado">
+
+
+                                        <input id="datetime">
+                                        <!-- <input type="datetime-local" id="meeting-time" name="meeting-time" value="" min="2018-06-07T00:00"
+                                                        max="2023-06-14T00:00">-->
+                                        <input type="submit" id="btnbutton" class="btn btn-outline-info" type="button"
+                                            value="Tomar turno" style="margin-left:250px; margin-top:15px;">
+
+                                    </form>
+                                </div>
+                                <div id="finalizar"></div>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+        <!---Fin-->
+        <div class="row marginR0">
+
+
+            <div>
+                <div id="asignacionTurno"></div>
+            </div>
+
+        </div>
+        
+
+        <div class="col-lg-6">
+
+            <div class="titulosSecundarios textoCentrado" id="salidaTurno">
+            </div>
+
+        </div>
+
+
+    </section>
+
+   
+    <!--LOGIN-->
+    <section id="logIn" style="display: none;">
+      
+        <div >
+
+            <div class="row">
+                <div class="col-md-12" style="box-sizing: border-box;">
+                    <div class="card" style="margin-left: 400px; margin-top:28px; margin-bottom: 28px;">
+                        <div class="login-box">
+                            <div class="login-snip"> <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+                                <div class="login-space">
+                                    <div class="login">
+                                        <div class="group"> <label for="user" class="label" style="color:white;">Usuario</label> <input  id="user" type="text" class="input" placeholder="Ingrese nombre de usuario"> </div>
+                                        <div class="group"> <label for="pass" class="label" style="color:white;">Contraseña</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Ingrese contraseña"> </div>
+                                        <div class="group"> <input type="submit" class="button" value="Sign In" id="signin"> </div>
+                                        <div class="hr"></div>
+                                        <div class="foot"> <a href="#" id="refresh" style="color:white;">Regresar al sistema de turnos</a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+
+
+    </section>
+        
+
+
+
+    <!--CONTROL-->
+
+    <section style="display: none" id="listaControl">
+
+        
+        <h1  class="titulosPrincipales textoCentrado" style="color:#1696aa;">Control</h1><br>
+
+        <link type="text/css" rel="stylesheet" href="../css/style.css" />
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" >
+                    <button id="botonFiltroOS" style="display: none;" >Filtrar por Obra Social</button>
+                    <button id="botonFiltroBusqueda" style="display: none;"  >Buscar ingresando texto</button><br><br>
+                    <select id= "filterOS">
+
+                    </select><br><br>
+
+                    <div class="input-group mb-3" id="busquedaTexto">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Buscar</span><br>
+                            </div>
+                            <input id="buscarPaciente" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                
+
+                </div>
+
+            </div>  
+
+            <div class="row">
+                <div class="col-lg-12">
+                <div class="main-box clearfix">
+                    <div class="table-responsive">
+                        <table class="table user-list">
+                        <thead>
+                        <tr>
+                            <th><span>Paciente</span></th>
+                            <th><span>Proximo Turno</span></th>
+                            <th class="text-center"><span>DNI</span></th>
+                            <th><span>Email</span></th>
+                            <th><span>Obra Social</span></th>
+                            <th><span>N° Afiliado</span></th>
+                        </tr>
+                        </thead>
+                        <tbody id="control1">
+                    
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+    <footer class="container-fluid gradienteFooter" id="footer">
+
+
+        <div class="row rr">
+
+            <div class="col-lg-4 col-xs-12 textoCentrado">
+                <img src="../assets/img/logosmiletransp.png" class="logoFooter" alt="logo" width="45%">
+                <p class=" textoFooter textoFooter--small--centrado">&#169;Alineare</p>
+                <p class=" textoFooter textoFooter--xsmall">Centro de Ortodoncia y Odontología Integral</p>
+            </div>
+
+            <div class="col-lg-3 col-xs-12 rrss textoFooter">
+                <div class="textoFooter textoCentradoMobile">Contacto</div>
+                <a href="https://api.whatsapp.com/send/?phone=5492612560889&text&app_absent=0" target="_blank"
+                    class=" textoFooter textoFooter--small textoCentradoMobile">+54 9 261 3725884</a>
+                <a href="contacto.html" class=" textoFooter textoFooter--small textoCentradoMobile"
+                    target="_blank">Comunicate con nosotros</a>
+                <a href="https://goo.gl/maps/DXAESvAEsUoetsaZA" target="_blank"
+                    class=" textoFooter textoFooter--small textoCentradoMobile">Alpatacal 1391, Ciudad de Mendoza</a>
+            </div>
+
+
+            <div class="col-lg-2 col-xs-12 rrss textoFooter">
+                <div class="textoFooter textoCentradoMobile">Covid-19</div>
+                <a href="../index.html#protocolo"
+                    class=" textoFooter textoFooter--small textoCentradoMobile">Protocolo</a>
+                <a href="https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/coronavirus-disease-covid-19"
+                    target="_blank">
+                    <p class=" textoFooter textoFooter--small textoCentradoMobile">Más información</p>
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-xs-12 rrss">
+                <p class="textoCentrado textoFooter textoCentradoMobile">Seguínos en nuestras redes!</p>
+                <div class="centrarItemsMobile">
+                    <a href="https://www.instagram.com/alineareortodonciayodontologia/" target="_blank"><img
+                            src="../assets/img/logoinsta.png" alt="instagram" class="  rrss__logos"></a>
+                    <a href="https://api.whatsapp.com/send/?phone=5492612560889&text&app_absent=0" target="_blank"><img
+                            src="../assets/img/logowsp.png" alt="whatsapp" class="rrss__logos"></a>
+                    <a href="https://www.facebook.com/AlineareCentrodeOrtodoncia" target="_blank"><img
+                            src="../assets/img/logofb.png" alt="facebook" class="rrss__logos"></a>
+                </div>
+            </div>
+
+        </div>
+
+         
+        
+
+
+
+
+    </footer>
+
+    <!--SCRIPTS---->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
+    <script src="../js/moment.js"></script>
+    <script src="../js/jquery.datetimepicker.full.js"></script>
+    <script src="../js/vars-globales.js"></script>
+    <script src="../js/funciones.js"></script>
+    <script src="../js/turnero.js"></script>
+    <script src="../js/config-datetimepicker.js"></script>
+   
+   
+
+</body>
+
+</html>

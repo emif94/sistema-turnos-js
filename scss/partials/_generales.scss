@@ -1,0 +1,293 @@
+@import "colors";
+   
+html {
+	scroll-behavior: smooth;
+}
+
+
+
+.textoCentrado {
+	text-align: center;
+}
+
+.estiloParrafos {
+	font-family: 'Mulish', sans-serif;
+	font-weight: 300;
+	color:black;
+	&--blanco{
+		color:white;
+		font-size:17px;
+	}
+	&--blue4{
+		color:$blue4;
+	}
+		&--blue6{
+		color:$blue6;
+	}
+}
+
+.noWrap{
+	display:flex;
+	flex-wrap:nowrap;
+}
+
+.titulosSecundarios {
+	font-family:'Mulish', sans-serif;
+	font-size: 25px;
+	font-weight: 300;
+	color:white;
+    font-style: italic;
+}
+
+
+
+
+
+.flexEnd{
+	display:flex;
+	justify-content:flex-end;
+}
+
+.dontStretch{
+	object-fit:cover;
+}
+
+.bordesRedon {
+	border-radius: 12px;
+}
+
+.bordesRedon2 {
+	border-radius: 7px;
+}
+
+
+
+
+.fuenteAlineare {
+	font-family: 'Lobster', cursive;
+	color: #1CB8D0;
+	text-transform: capitalize;
+	font-style: normal;
+	padding: 0px;
+	border-style: none;
+}
+
+
+
+.titulosPrincipales{
+	@extend.titulosSecundarios;
+	font-size:35px;	
+}
+
+.titulosSecundariosAzul{
+	@extend.titulosSecundarios;
+	font-size:35px;	
+	color:$blue5;
+}
+
+
+
+.centrarItems{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top:0px;
+}
+
+.centrarItemsCol{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+
+.whiteHover a:hover{
+	color:white;
+	text-decoration:none;
+}
+
+.mulish{
+	font-family:'Mulish', sans-serif;
+}
+
+.eliminarBullets {
+	list-style:none;
+}
+
+/*-----MARGENES Y PADDINGS-------------------------------------------------------->>>*/
+
+@for $i from 0 through 9 {
+  .paddingTop#{$i} {padding-top: 20px* $i;}
+}
+
+@for $i from 0 through 9 {
+  .paddingBott#{$i} {padding-bottom: 20px* $i;}
+}
+
+@for $i from 0 through 9 {
+  .paddingL#{$i} {padding-left: 20px* $i;}
+}
+
+@for $i from 0 through 9 {
+  .paddingR#{$i} {padding-right: 20px* $i;}
+}
+
+@for $i from 0 through 9 {
+  .marginTop#{$i} {margin-top: 20px* $i;}
+}
+
+@for $i from 0 through 9 {
+  .marginBott#{$i} {margin-bottom: 20px* $i;}
+}
+
+@for $i from 0 through 9 {
+  .marginL#{$i} {margin-left: 20px* $i;}
+}
+
+@for $i from 0 through 9 {
+  .marginR#{$i} {margin-right: 20px* $i;}
+}
+
+/*-----IMAGENES--------------------------------------------------------------------------->>>*/
+
+
+
+/*-----COLORES TEXTO, BACKGROUNDS, SOMBRAS--------------------------------------------------------->>>*/
+
+
+.fondo1 {
+	background-color: #0C4C55;
+}
+
+.fondo2 {
+	background-image: linear-gradient(to bottom, white, #1AA8BD, #0C4C55);
+}
+
+.fondoPaginas{
+	background-color: white;
+	background-size:100%;
+}
+
+.colorTexto{
+	&-blue{
+		&--1{
+			color:$blue0;
+		}
+		&--2{
+		color:$blue2;
+		}
+		&--3{
+			color:$blue3;
+		}
+		&--4{
+			color:$blue4;
+		}
+		&--5{
+			color:$blue5;
+		}
+		&--6{
+			color:$blue6;
+		}
+
+	}
+	&-grayScale{
+		&--white{
+			color:white,
+		}
+		&--1{
+			color:$gray1
+		}
+		&--2{
+			color:$gray2
+		}
+		&--3{
+			color:$gray3
+		}
+		&--4{
+			color:$gray4
+		}
+		&--5{
+			color:$gray5
+		}
+		&--6{
+			color:$gray6
+		}
+		&--7{
+			color:$gray7
+		}
+		&--8{
+			color:$gray8
+		}
+		&--9{
+			color:$gray9
+		}
+		&--black{
+			color:black;
+		}
+
+	}
+	
+}
+
+
+.articulos{
+	&__estilo{
+		color:white;
+		font-weight: 300;
+
+		&--blanco{
+			background-image: white;
+			padding-top:50px;
+			background-size: 100%;
+		}
+
+		&--azul1{
+			background-image: $blue1;
+			padding-top:50px;
+			background-size: 100%;
+		}
+
+		&--azul1Invertido{
+			background-image: $blue1Invertido;
+			padding-top:50px;
+			background-size: 100%;
+		}
+		&--azul2{
+			background-color:$blue2;
+			padding-top:50px;
+			background-size: 100%;
+		}
+		&--azul3{
+			background-color:$blue3;
+			padding-top:50px;
+			background-size: 100%;
+		}
+		&--azul4{
+			background-color:$blue4;
+			padding-top:50px;
+			background-size: 100%;
+		}
+		&--azul5{
+			background-color:$blue5;
+			padding-top:50px;
+			background-size: 100%;
+		}
+		&--azul6{
+			background-color:$blue6;
+			padding-top:50px;
+			background-size: 100%;
+		}		
+	}
+}
+
+.sombra1{
+	text-shadow: white 2px 2px 5px;
+}
+
+.sombra2{
+	text-shadow: $blue6 2px 2px 2px;
+}
+
+.boxShadow a:hover{
+	box-shadow: 5px -5px 27px $blue6;
+}

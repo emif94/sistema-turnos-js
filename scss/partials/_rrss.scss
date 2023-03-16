@@ -1,0 +1,33 @@
+/*RRSS---------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+
+
+.whatsapp {
+	position:fixed;
+	top: 550px;
+	right: 50px;
+	display: flex;
+	justify-content: flex-end;
+	z-index:999999;
+	border-radius: 50px;
+}
+
+.rrss {
+	display:flex;
+	align-content:flex-start;
+	padding:10px;
+	flex-direction:column;
+	 &__logos{
+		padding:7px;
+		width:30px;
+		&--nav{
+		transform: translate(200px);
+		display:flex;
+		flex-direction:row;
+		}			
+	}		
+}
+
+
+
+/*Fin RRSS-----------------------------*/
