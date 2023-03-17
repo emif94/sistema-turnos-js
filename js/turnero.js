@@ -261,7 +261,7 @@ window.addEventListener("load",()=> {
 						<span class="textoCentrado">Te esperamos!</span><br>`);
 						$("#turnoAprobado").show();
 						$("#elegirTurno").hide(); //Calendario desaparece
-						$("#finalizar").append (`<a href="https://emif94.github.io/alineareodontologia/"><button type="button" id="finalizar" class="btn btn-outline-info" style="margin-left:250px;">Finalizar</button></a>`)
+						$("#finalizar").append (`<a href="../pages/contacto.html"><button type="button" id="finalizar" class="btn btn-outline-info" style="margin-left:250px;">Finalizar</button></a>`)
 				        acumuladorPacientes();
 						console.log ("Turno Aprobado")
 
